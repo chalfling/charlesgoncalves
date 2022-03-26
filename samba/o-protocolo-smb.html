@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br" >
+
+<!-- Mirrored from www.halfling.com.br/samba/o-protocolo-smb.html by HTTrack Website Copier/3.x [XR&CO'2020], Wed, 13 May 2015 21:46:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <base  />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="halfling, CG Tecnologia" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="CG Tecnologia LTDA - Artigos de TI" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>O Protocolo SMB</title>
+  <link href="../templates/world_of_warcraft_3_flash/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+  <meta name="designer" content="Juergen Koller - http://www.lernvid.com" />
+<meta name="licence" content="Copyright LernVid.com - Creative Commons Sharalike 3.0" />
+<link href="../templates/world_of_warcraft_3_flash/css/template.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../templates/world_of_warcraft_3_flash/css/joomla.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../templates/world_of_warcraft_3_flash/css/typo.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="shortcut icon" href="../templates/world_of_warcraft_3_flash/favicon.ico" />
+	  <!--[if IE 7]>
+	  <link href="/templates/world_of_warcraft_3_flash/css/ie7.css" rel="stylesheet" type="text/css" media="all" />
+   <![endif]-->
+   <!--[if lt IE 7]>
+	  <link href="/templates/world_of_warcraft_3_flash/css/ie5x6x.css" rel="stylesheet" type="text/css" media="all" />
+   <![endif]-->
+		</head>
+
+<body>
+<div id="wrapper">
+  <div id="bg_up">
+    <div id="masthead_container">
+      <div id="masthead">
+                  <a id="guild_name" href="/" style="position:relative; color: #FF8C00; ; font-size:36px; z-index:5;">CG Tecnologia</a>
+                           <div style="position:absolute; top:0; left:0; z-index:0;">
+                      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+               codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,24"
+               width="1000" height="400">
+              <param name="movie" value="../templates/world_of_warcraft_3_flash/fl/wow3_header.swf" /> 
+              <param name="quality" value="high" />
+              <param name="menu" value="false" />
+              <param name="wmode" value="transparent" />
+              <param name="allowScriptAccess" value="sameDomain" />
+              <!--[if !IE]> <-->
+                  <object data="../templates/world_of_warcraft_3_flash/fl/wow3_header.swf"
+                      width="1000" height="400" type="application/x-shockwave-flash">
+                   <param name="quality" value="high" />
+                   <param name="menu" value="false" />
+                   <param name="allowScriptAccess" value="sameDomain" />
+                   <param name="pluginurl" value="http://www.macromedia.com/go/getflashplayer" />
+                   <param name="wmode" value="transparent" />
+                   .
+                </object>
+              <!--> <![endif]-->
+            </object>
+           </div>
+              </div>
+    </div>
+    <div id="container">
+            <div id="page_content">
+        <div id="content_up">
+          <div id="content_up_left">
+                        <div id="content_up_right">
+                  
+            </div>
+          </div>
+        </div>
+            
+                      <div id="sidebar_left">
+                     		<div class="module_menu">
+							<h3 class="module"><strong>Main Menu</strong></h3>
+						<div>
+				<div>
+					<div>
+					<ul class="nav menu ">
+<li class="item-14"><a href="/" >Home</a></li><li class="item-2 parent"><a href="../dcc.html" >DCC</a></li><li class="item-5 active deeper parent"><a href="../samba.html" >SAMBA</a><ul class="nav-child unstyled small"><li class="item-7"><a href="linux.html" >Linux</a></li><li class="item-8"><a href="o-que-e-samba.html" >O que é SAMBA?</a></li><li class="item-9 current active"><a href="o-protocolo-smb.html" >O Protocolo SMB</a></li><li class="item-10"><a href="seguranca.html" >Segurança</a></li><li class="item-11"><a href="exemplo-de-smbconf.html" >smb.conf</a></li></ul></li><li class="item-13"><a href="../aplicativos.html" >Aplicativos</a></li><li class="item-12"><a href="http://www.dattebayobrasil.com/" target="_blank" >Datebayo Brasil</a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+							<h3 class="module"><strong>Pagamento</strong></h3>
+						<div>
+				<div>
+					<div>
+					
+
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+							<h3 class="module"><strong>Doação</strong></h3>
+						<div>
+				<div>
+					<div>
+					
+
+					</div>
+				</div>
+			</div>
+		</div>
+	
+            </div>
+              
+              
+            <div id="content_outleft">
+                
+                
+            <div id="maincontent">
+              
+<div id="system-message-container">
+<div id="system-message">
+</div>
+</div>
+              <div class="item-page">
+
+	<h2 class="contentheading">
+			O Protocolo SMB		</h2>
+
+
+
+
+
+
+
+
+
+<p><strong>
+<p align="justify">O que é SMB?</p>
+</strong></p>
+<p align="justify">É um protocolo para compartilhar arquivos,  impressoras, portas  seriais.</p>
+<p align="justify">SMB é um servidor de clientes, protocolo  request-response. A  única exceção à natureza da request-response de SMB (isto é, onde o  cliente faz  os pedidos e os usuários emitem respostas).</p>
+<p align="justify">Os usuários fazem os sistemas de arquivos e os outros  recursos  (impressoras, webmails, APIs) disponíveis aos clientes na rede. Os  computadores  dos clientes podem ter seus próprios discos rígidos, mas querem também o  acesso  aos sistemas, às impressoras compartilhadas e arquivos dos usuários.</p>
+<p align="justify">Os clientes conectam aos usuários usando TCP/IP  (realmente  NetBIOS sobre o TCP/IP como especificado em RFC1001 e em RFC1002),  NetBEUI ou  IPX/SPX. Uma vez que estabeleceram uma conexão, os clientes podem então  emitir  os comandos (SMBs) ao usuário que permita arquivos, executam e modificam   arquivos.</p>
+<p align="justify">Como mencionado, SMB pode funcionar com protocolos  múltiplos  excedentes.</p>
+<p align="justify">SMB pode ser usado sobre o TCP/IP, o NetBEUI e o  IPX/SPX. Se o  TCP/IP ou NetBEUI estiverem no uso, o NetBIOS API está sendo usado.</p>
+<p align="justify">SMB foi emitido também sobre o protocolo do DECnet.  Digital  (agora Compaq) fez esta para seu produto de PATHWORKS.</p>
+<p align="justify">O TCP/IP excedente de NetBIOS parece ser consultado  por muitos  nomes. Microsoft consulta-lhe como NBT em alguns lugares e NetBT em  outro  (especificamente em sua documentação de Windows NT e no registro de  Windows NT).  Outros consultam-lhe como RFCNB. NetBEUI é referense às vezes como a NBF  (o  formato do quadro de NetBIOS?) por Microsoft<span style="font-size: x-small;">.</span></p>
+<p><span style="font-size: x-small;"><br /><br /> <strong>E quanto ao Windows 2000?</strong> O Samba interage corretamente com o Windows 2000, desde que este último  esteja configurado em MODO DE COMPATIBILIDADE COM NT 4. Nativamente, o  Windows 2000 utiliza Kerberos e LDAP, e o Samba ainda não oferece  interoperabilidade com Windows nesses protocolos.</span></p>
+	
+</div>
+
+            </div>
+          </div>
+        </div>  
+        <div class="clr"></div>
+        <div id="content_down">
+          <div id="content_down_left">
+                                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+                 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,24"
+                 width="1000" height="20">
+                <param name="movie" value="../templates/world_of_warcraft_3_flash/fl/content_down.swf" /> 
+                <param name="quality" value="high" />
+                <param name="menu" value="false" />
+                <param name="wmode" value="transparent" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <!--[if !IE]> <-->
+                    <object data="../templates/world_of_warcraft_3_flash/fl/content_down.swf"
+                        width="1000" height="20" type="application/x-shockwave-flash">
+                     <param name="quality" value="high" />
+                     <param name="menu" value="false" />
+                     <param name="allowScriptAccess" value="sameDomain" />
+                     <param name="pluginurl" value="http://www.macromedia.com/go/getflashplayer" />
+                     <param name="wmode" value="transparent" />
+                     .
+                  </object>
+                <!--> <![endif]-->
+              </object>
+                    
+          </div>
+        </div>  
+      <div id="container2">
+                
+        <div id="footer">
+          <div id="date"><p id="date2"></p></div>
+          <script>
+                var d = new Date();
+                document.getElementById("date2").innerHTML = d.toLocaleDateString() +" "+ d.toLocaleTimeString();
+          </script>
+          <div id="copyright_info">
+            <p>Powered by CG Tecnologia LTDA © 2006-2022</p>
+          </div>
+                  </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<!-- Mirrored from www.halfling.com.br/samba/o-protocolo-smb.html by HTTrack Website Copier/3.x [XR&CO'2020], Wed, 13 May 2015 21:46:08 GMT -->
+</html>
