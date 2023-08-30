@@ -16,4 +16,10 @@ RewriteBase /
 # letsencrypt
 RewriteRule ^.well-known/(.*)$ - [L]
 
-Header set Content-Security-Policy "default-src 'self'"
+<ifModule mod_headers.c>
+Header set X-Frame-Options: DENY
+Header set Referrer-Policy: no-referrer
+Header set X-Content-Type-Options: nosniff
+Header set Permissions-Policy: document-domain=()
+Header set Content-Security-Policy: script-src 'self'; frame-ancestors 'none';
+</ifModule>
