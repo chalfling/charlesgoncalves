@@ -22,5 +22,5 @@ Header set Referrer-Policy: no-referrer
 Header set X-Content-Type-Options: nosniff
 Header set X-XSS-Protection: 1; mode=block
 #Header set Permissions-Policy: document-domain=()
-Header set Content-Security-Policy: default-src 'self';
+Header set Content-Security-Policy: script-src 'nonce-rAnd0m';
 </ifModule>
