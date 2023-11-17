@@ -12,7 +12,7 @@ p {
 </style>
 </head>
 <body>
-    <p id="faltam"></p>
+	<p id="faltam"></p>
     <p id="days"></p>
     <p id="hours"></p>
     <p id="mins"></p>
@@ -22,10 +22,11 @@ p {
     // The data/time we want to countdown to
     var currentYear=new Date().getFullYear();
     var countDownDate = new Date(`Dec 23 ${currentYear} 00:00:00`);
-    if (countDownDate - new Date().getTime()< -86400000){
+    var now = new Date().getTime();
+    if (countDownDate - now < -86400000){
     	var countDownDate = new Date(`Dec 23 ${currentYear+1} 00:00:00`);
     }
-
+    
     // Run myfunc every second
     var myfunc = setInterval(function() {
 
