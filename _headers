@@ -5,4 +5,4 @@
   X-XSS-Protection: 1; mode=block
   Permissions-Policy: document-domain=()
   Access-Control-Allow-Origin: *.pages.dev
-  Content-Security-Policy: default-src 'self';
+  Content-Security-Policy: script-src 'nonce-rAnd0m';
