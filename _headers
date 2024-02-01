@@ -1,8 +1,8 @@
-/*
+/**/
   X-Frame-Options: DENY
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
   Permissions-Policy: fullscreen=()
   Access-Control-Allow-Origin: *.pages.dev
-  Content-Security-Policy: script-src 'nonce-rAnd0m';
+  Content-Security-Policy: script-src 'self' 'sha256-aNdN7xz1SYRR8dUxujJS5RJoAG+ZYWHoLADpRwUcFzM=' 'report-sample' 'unsafe-inline'; style-src 'self' 'sha256-tXGDuVCwB56kaFoZxfsR6EHMSYM/UgPSyKneS/uPoaM=' 'report-sample' 'unsafe-inline';;
