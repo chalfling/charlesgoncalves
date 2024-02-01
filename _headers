@@ -5,4 +5,4 @@
   X-XSS-Protection: 1; mode=block
   Permissions-Policy: fullscreen=()
   Access-Control-Allow-Origin: *.pages.dev
-  Content-Security-Policy: frame-ancestors 'self';block-all-mixed-content;default-src 'self';script-src 'self' 'nonce-cgtec2024' https:;style-src 'self' 'nonce-cgtec2024';object-src 'none';frame-src 'self';child-src 'self';img-src 'self';font-src 'self';connect-src 'self';manifest-src 'self';base-uri 'self';form-action 'self';media-src 'self';prefetch-src 'self';worker-src 'self';
+  Content-Security-Policy: frame-ancestors 'self';block-all-mixed-content;default-src 'self';script-src 'strict-dynamic' 'nonce-cgtec2024' https:;style-src 'self' 'nonce-cgtec2024';object-src 'none';frame-src 'self';child-src 'self';img-src 'self';font-src 'self';connect-src 'self';manifest-src 'self';base-uri 'self';form-action 'self';media-src 'self';prefetch-src 'self';worker-src 'self';
